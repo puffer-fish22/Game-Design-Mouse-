@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Mouse Game Assets/Mouse Game.unity
+    guid: f0132601fb2cf3741bb1b0dd272fdb01
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3eccfa93223773a4bb35f19b0d3eb006, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4e015e5bf42e2014db0c581066222a7f, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f0d6da78cf388b540921ec040c7aed66, type: 2}
