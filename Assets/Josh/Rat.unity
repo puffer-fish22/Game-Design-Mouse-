@@ -1772,6 +1772,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &673913068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2381359076180656184, guid: 1a3f618b6b9d6f64bafbd6c0be33e85e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297710128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &673913072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673913068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11, y: 0.10000003, z: 24.000008}
+  m_Center: {x: 5.5000005, y: -0.050000012, z: 12.000001}
 --- !u!1 &711370281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,8 +1828,8 @@ Transform:
   m_GameObject: {fileID: 711370281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.09, z: 1.76}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0.693, y: 0.39, z: 0.85}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1995227529}
@@ -1919,7 +1946,7 @@ GameObject:
   - component: {fileID: 731397972}
   - component: {fileID: 731397971}
   - component: {fileID: 731397975}
-  - component: {fileID: 731397976}
+  - component: {fileID: 731397974}
   m_Layer: 0
   m_Name: XR Origin (Main)
   m_TagString: Player
@@ -1967,42 +1994,30 @@ Transform:
   m_GameObject: {fileID: 731397970}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.15, z: -3}
+  m_LocalPosition: {x: 0, y: 0.46, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 496717237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &731397975
-Rigidbody:
+--- !u!114 &731397974
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731397970}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &731397976
-CapsuleCollider:
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 1154555109}
+  m_MinHeight: 0
+  m_MaxHeight: Infinity
+--- !u!143 &731397975
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2019,10 +2034,13 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
+  serializedVersion: 3
+  m_Height: 0.77
+  m_Radius: 0.33
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &863360947
 GameObject:
@@ -2091,17 +2109,17 @@ PrefabInstance:
     - target: {fileID: 3830880751966002461, guid: fa5eb15792f939842b53b2b7bf795c07,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3830880751966002461, guid: fa5eb15792f939842b53b2b7bf795c07,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3830880751966002461, guid: fa5eb15792f939842b53b2b7bf795c07,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3830880751966002461, guid: fa5eb15792f939842b53b2b7bf795c07,
         type: 3}
@@ -2199,7 +2217,7 @@ Rigidbody:
   m_GameObject: {fileID: 1060911135}
   serializedVersion: 4
   m_Mass: 1500
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -2215,7 +2233,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!4 &1060911138 stripped
 Transform:
@@ -2251,25 +2269,41 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060911135}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1acf45e8a0847dc4d82701c8dfe61d43, type: 3}
+  m_Script: {fileID: 11500000, guid: 611c7b63c0d913f40b10baeaebc3b945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  turnSpeed: 40
-  moveInput:
+  xrOrigin: {fileID: 731397972}
+  driverSeatPosition: {fileID: 1278827519}
+  carRigidbody: {fileID: 1060911137}
+  accelerationForce: 1000
+  turnSpeed: 100
+  enterExitAction:
     m_UseReference: 1
     m_Action:
-      m_Name: Move Input
+      m_Name: Enter Exit
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 5b02ac5d-dd62-47ee-8769-ba43dc7e8b9c
+      m_Id: 3e8279ef-c2c7-48f5-ba25-a512a82cddad
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+    m_Reference: {fileID: 844724048113849593, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  steeringAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Steering
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ab15f082-10df-4c9f-94e5-1a215a8655f6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
 --- !u!1 &1154555107
 GameObject:
@@ -2465,7 +2499,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2381359076180656184, guid: 1a3f618b6b9d6f64bafbd6c0be33e85e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673913072}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3f618b6b9d6f64bafbd6c0be33e85e, type: 3}
 --- !u!1 &1870080687
 GameObject:
