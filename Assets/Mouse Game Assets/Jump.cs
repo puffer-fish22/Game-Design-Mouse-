@@ -9,7 +9,7 @@ public class Jump : MonoBehaviour
 {
 
 [SerializeField] private InputActionReference jumpActionReference;
-[SerializeField] private float jumpForce = 50.0f;
+[SerializeField] private float jumpForce = 2.0f;
 
 private Rigidbody _body;
 //private CharacterController controller;
