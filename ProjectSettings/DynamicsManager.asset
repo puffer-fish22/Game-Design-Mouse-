@@ -36,4 +36,4 @@ PhysicsManager:
   m_EnableUnifiedHeightmaps: 1
   m_ImprovedPatchFriction: 0
   m_SolverType: 1
-  m_DefaultMaxAngularSpeed: 50
+  m_DefaultMaxAngularSpeed: 7
