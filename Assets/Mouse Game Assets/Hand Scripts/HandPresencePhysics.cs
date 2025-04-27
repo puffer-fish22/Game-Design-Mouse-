@@ -10,7 +10,7 @@ public Transform target;
 private Rigidbody rb;
 //
 public Renderer nonPhysicalHand;
-public float showNonPhysicalHandDistance = 0f;
+public float showNonPhysicalHandDistance = 0.1f;
 //
 private Collider[] handColliders;
 //
