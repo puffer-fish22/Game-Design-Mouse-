@@ -15,10 +15,10 @@ public class MatchingupPoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       Cube2.transform.SetParent( Cube1.transform);
- 	Cube2.transform.localPosition = Vector3.zero;
- 	Cube2.transform.localRotation = Quaternion.Identity;
- 	Cube2.transform.localScale = Vector3.one;
- 	Cube2.transform.SetParent(null);  
+       //Cube2.transform.SetParent( Cube1.transform);
+ 	//Cube2.transform.localPosition = Vector3.zero;
+ 	//Cube2.transform.localRotation = Quaternion.Identity;
+ 	//Cube2.transform.localScale = Vector3.one;
+ 	//Cube2.transform.SetParent(null);  
     }
 }
