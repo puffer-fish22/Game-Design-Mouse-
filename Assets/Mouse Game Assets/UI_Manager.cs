@@ -25,7 +25,8 @@ private void OnTriggerEnter(Collider other)
         
 	if(other.tag == "Coin"){
 	AddScore(1);
-	Destroy(other.gameObject);
+	//Destroy(other.gameObject);
+	//other.simulated = true;
 	}
 
 	}
