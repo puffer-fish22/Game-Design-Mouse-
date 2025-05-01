@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - Object
+  - Cheese
   layers:
   - Default
   - TransparentFX
