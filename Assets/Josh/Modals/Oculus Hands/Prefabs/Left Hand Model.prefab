@@ -328,14 +328,14 @@ GameObject:
   m_Component:
   - component: {fileID: 109434732395451517}
   - component: {fileID: 109434732388006827}
-  - component: {fileID: 3094078257030681683}
+  - component: {fileID: -8336828515260039002}
   m_Layer: 0
   m_Name: Left Hand Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &109434732395451517
 Transform:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3094078257030681683
+--- !u!114 &-8336828515260039002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 109434732395284509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 279d67de37c77ff438ac4b5065e4fd22, type: 3}
+  m_Script: {fileID: 11500000, guid: 387a2e4ecbba30647ab8e85c9c591336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   handAnimator: {fileID: 109434732388006827}
@@ -393,7 +393,7 @@ MonoBehaviour:
       m_Name: Trigger
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: fd42df68-b52b-4ca2-97de-3e9a50aec2ad
+      m_Id: 9221c714-c999-4544-834f-3f6f9abc7dbe
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -406,7 +406,7 @@ MonoBehaviour:
       m_Name: Grip
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 06a4aee5-fe31-457a-8e69-483aa05a1425
+      m_Id: 7309c9ff-7900-4046-986b-d8f4dc3c70db
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
